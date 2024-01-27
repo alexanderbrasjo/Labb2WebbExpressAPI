@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieAPI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+<h1 class="display-1">Movies API</h1>
+
+<h3 class="display-3">Documentation</h3>
+
+<p class="lead">I have created a database with my favorite movies!</p>
+<p class="lead">This is how to use my API with Postman</p>
+<table class="table table-bordered">
+    <tr>
+        <th>Postman URL</th>
+        <th>Description</th>
+        <th>Information</th>
+        <th>Method</th>
+    </tr>
+    <tr>
+        <th>http://localhost:3001/movies</th>
+        <th>Get all Movies</th>
+        <th>Shows all movies in the database, no parameters needed</th>
+        <th>GET</th>
+    </tr>
+    <tr>
+        <th>http://localhost:3001/movie/id</th>
+        <th>Get Movie by ID</th>
+        <th>Shows a movie by a specific Id, Ids is an int and starting from 1</th>
+        <th>GET</th>
+    </tr>
+    <tr>
+        <th>http://localhost:3001/movie</th>
+        <th>Add a new Movie</th>
+        <th>Add a new movie to the database, requires body. Example {"title": "Harry Potter", "director": "JK Rowling"}</th>
+        <th>POST</th>
+    </tr>
+    <tr>
+        <th>http://localhost:3001/movie/id</th>
+        <th>Update a movie</th>
+        <th>Update a movie in the database. Use Id to choose witch movie, and body with the updated data, example {"title": "Harry Potter", "director": "JK Rowling"} </th>
+        <th>PUT</th>
+    </tr>
+    <tr>
+        <th>http://localhost:3001/movie/id</th>
+        <th>Delete a movie</th>
+        <th>Delete a movie in the database. Use Id to choose witch movie to delete</th>
+        <th>DELETE</th>
+    </tr>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
